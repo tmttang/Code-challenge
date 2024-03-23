@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'NeueMontrealMedium';
+  src: url('../public/fonts/OTF/PPNeueMontreal-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NeueMontrealRegular';
+  src: url('../public/fonts/OTF/PPNeueMontreal-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NeueMontrealBold';
+  src: url('../public/fonts/OTF/PPNeueMontreal-Bold.otf') format('opentype');
+}
+
+body {
+  /* @apply bg-black; */
+  /* @apply min-h-screen flex items-center; */
+}
+
+.h-70vh {
+  height: 70vh;
+}
+
+.h-50vh {
+  height: 50vh;
+}
+
+.min-h-70vh {
+  min-height: 70vh;
+}
