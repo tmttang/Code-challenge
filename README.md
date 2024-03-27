@@ -26,6 +26,9 @@ Start the development server
   npm run dev
 ```
 
+## Live preview
+https://tmtcc1.netlify.app/
+
 ## License
 
 These are practice projects and all materials owned by companies and individuals whose websites are featured on Frontend Practice are intended for practice purposes only.
