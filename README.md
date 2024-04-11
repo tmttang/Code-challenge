@@ -9,6 +9,7 @@ Code Challenge
 - **Linting**: ESLint
 - **Build Tool**: Vite
 - **Animations**: Framer Motion
+- **State-Management**: Zustand
 
 ## How to run the project
 
@@ -27,6 +28,7 @@ Start the development server
 ```
 
 ## Live preview
+
 https://tmtcc1.netlify.app/
 
 ## License
