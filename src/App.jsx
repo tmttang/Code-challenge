@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { DataProvider } from './hook/DataProvider'
+import { DataProvider } from './store/dataStore'
 import './assets/index.css'
-import Home from './pages/Home'
-import Profile from './pages/Profile'
-import Contact from './pages/Contact'
-import Project from './pages/Project'
-import NotFoundPage from './pages/NotFoundPage'
+import Home from './pages/home'
+import Profile from './pages/profile'
+import Contact from './pages/contact'
+import Project from './pages/project'
+import NotFoundPage from './pages/notFoundPage'
 
 const router = createBrowserRouter([
   {

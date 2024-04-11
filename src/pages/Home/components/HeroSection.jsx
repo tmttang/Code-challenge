@@ -1,5 +1,5 @@
-import MotionContainer from '../../../components/Layout/MotionContainer'
-import MotionInner from '../../../components/Layout/MotionInner'
+import MotionContainer from '../../../components/layout/MotionContainer'
+import MotionInner from '../../../components/layout/MotionInner'
 
 const HeroSection = () => {
   return (

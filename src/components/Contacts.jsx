@@ -1,5 +1,5 @@
-import MotionContainer from './Layout/MotionContainer'
-import MotionInner from './Layout/MotionInner'
+import MotionContainer from './layout/MotionContainer'
+import MotionInner from './layout/MotionInner'
 const Contacts = () => {
   return (
     <MotionContainer>

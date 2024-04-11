@@ -1,10 +1,9 @@
-import { useContext } from 'react'
-import { DataContext } from '../../../hook/DataProvider'
-import MotionContainer from '../../../components/Layout/MotionContainer'
-import MotionInner from '../../../components/Layout/MotionInner'
+import { useDataStore } from '../../../store/dataStore'
+import MotionContainer from '../../../components/layout/MotionContainer'
+import MotionInner from '../../../components/layout/MotionInner'
 
 const ProfilesSection = () => {
-  const { profiles } = useContext(DataContext)
+  const profiles = useDataStore((state) => state.profiles)
   return (
     <>
       <MotionContainer>

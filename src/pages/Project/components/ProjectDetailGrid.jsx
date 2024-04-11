@@ -1,4 +1,4 @@
-import MotionInner from '../../../components/Layout/MotionInner'
+import MotionInner from '../../../components/layout/MotionInner'
 const ProjectDetailGrid = ({ children, colSpans }) => {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 p-5'>

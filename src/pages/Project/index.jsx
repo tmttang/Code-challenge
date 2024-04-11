@@ -1,5 +1,4 @@
-import { useContext } from 'react'
-import { DataContext } from '../../hook/DataProvider'
+import { useDataStore } from '../../store/dataStore'
 import { ScrollRestoration, useParams } from 'react-router-dom'
 import Contacts from '../../components/Contacts'
 import Footer from '../../components/Footer'
@@ -7,8 +6,8 @@ import Close from '../../components/Close'
 import ProjectDetailGrid from './components/ProjectDetailGrid'
 import ProjectDetailImage from './components/ProjectDetailImage'
 import ProjectDetailText from './components/ProjectDetailText'
-import MotionContainer from '../../components/Layout/MotionContainer'
-import NotFoundPage from '../NotFoundPage'
+import MotionContainer from '../../components/layout/MotionContainer'
+import NotFoundPage from '../notFoundPage'
 
 const Project = () => {
   const { projectSlug } = useParams()
@@ -16,7 +15,7 @@ const Project = () => {
     ? projectSlug.toLowerCase().replace(/\s/g, '')
     : ''
 
-  const { projectsDetail } = useContext(DataContext)
+  const projectsDetail = useDataStore((state) => state.projectsDetail)
   const project = projectsDetail[projectName]
 
   if (!project) {

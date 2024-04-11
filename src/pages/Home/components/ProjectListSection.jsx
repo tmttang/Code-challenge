@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
-import { useContext } from 'react'
-import { DataContext } from '../../../hook/DataProvider'
-import MotionContainer from '../../../components/Layout/MotionContainer'
-import MotionInner from '../../../components/Layout/MotionInner'
+import { useDataStore } from '../../../store/dataStore'
+import MotionContainer from '../../../components/layout/MotionContainer'
+import MotionInner from '../../../components/layout/MotionInner'
 
 const ProjectListSection = () => {
-  const { projects } = useContext(DataContext)
+  const projects = useDataStore((state) => state.projects)
 
   return (
     <MotionContainer viewport={{ once: true, amount: 0.1 }}>
